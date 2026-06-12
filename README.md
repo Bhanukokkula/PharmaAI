@@ -332,17 +332,6 @@ pharmaai/
 └── mlruns/                       # MLflow file store (gitignored)
 ```
 
-## What's NOT in v1 (by design)
-
-- No real auth/OAuth/passwords/JWT — mock session in React state only, no
-  browser storage.
-- No payment processing — the checkout payment step is visual only.
-- No Airflow / Feast / Kubernetes / Prometheus / Grafana / drift detection.
-- No prescription drugs, no clinical-advice framing, no symptom→drug
-  "diagnosis".
-- No raw SQL — ORM only, to keep the Postgres door open.
-- No copyrighted brand imagery, logos, or stock photos — product visuals are
-  CSS/icon-based (lucide-react).
 
 ## Roadmap / next versions
 
