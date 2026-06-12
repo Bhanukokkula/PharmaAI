@@ -1,0 +1,28 @@
+# Python
+backend/.venv/
+__pycache__/
+*.pyc
+
+# Database
+backend/pharmaai.db
+backend/*.db
+
+# MLflow
+mlruns/
+backend/mlruns/
+
+# Data cache
+backend/ml/data/
+
+# Trained recommender artifacts (regenerate with `python -m ml.train`)
+backend/ml/artifacts/
+
+# Node / frontend
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# OS / editor
+.DS_Store
+.vscode/
+.claude/
