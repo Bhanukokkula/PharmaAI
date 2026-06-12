@@ -1,0 +1,25 @@
+# Optional, for environment parity — SQLite needs no service of its own.
+# Local dev (see README) is the primary, fastest workflow; this is the
+# one-command alternative.
+services:
+  backend:
+    build: ./backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - pharmaai_db:/app/data
+    environment:
+      - DATABASE_URL=sqlite:////app/data/pharmaai.db
+
+  frontend:
+    build:
+      context: ./frontend
+      args:
+        VITE_API_BASE: http://localhost:8000
+    ports:
+      - "5173:80"
+    depends_on:
+      - backend
+
+volumes:
+  pharmaai_db:
