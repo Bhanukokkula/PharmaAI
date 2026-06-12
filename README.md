@@ -344,4 +344,4 @@ pharmaai/
 - **Fork B — MLOps showcase:** swap in a drift-prone model (demand
   forecasting); the `PredictionLog` table already captures what real drift
   detection + retrain triggers + champion/challenger would need.
-- **Fork C — store depth:** real search, payments, inventory.
+- **Fork C — store depth:** real search, payments, inventory
